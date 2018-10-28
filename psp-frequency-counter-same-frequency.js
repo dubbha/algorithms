@@ -11,13 +11,13 @@
 */
 
 function sameFrequency(num1, num2) {
-  const digits1 = `${num1}`.split('');
+  const digits1 = `${num1}`.split('');      // number > string > array
   const digits2 = `${num2}`.split('');
 
   if (digits1.length !== digits2.length) return false;
 
   const freq1 = digits1.reduce((acc, cur) => {
-      acc[cur] = acc[cur] ? ++acc[cur] : 1;
+      acc[cur] = acc[cur] ? ++acc[cur] : 1;         // acc[cur] = (acc[cur] || 0) + 1;
       return acc;
   }, {});
 
@@ -29,5 +29,30 @@ function sameFrequency(num1, num2) {
     freq1[cur]--;     // decrease freq[cur], (freq[cur] -= 1, freq[cur] = freq[cur] - 1)
   }
 
+  return true;
+}
+
+// Less smart solution, count both frequency arrays first, then compare.
+// Not converting a srting to array this time, looping over a string itself.
+function sameFrequency(num1, num2) {
+  const digits1 = num1.toString();      // `${num1}`
+  const digits2 = num2.toString();
+
+  if (digits1.length !== digits2.length) return false;
+
+  const freq1 = {};
+  const freq2 = {};
+
+  for (let i = 0; i < digits1.length; i++) {
+    freq1[digits1[i]] = (freq1[digits1[i]] || 0) + 1;
+  }
+
+  for (let i = 0; i < digits2.length; i++) {
+    freq2[digits2[i]] = (freq2[digits2[i]] || 0) + 1;
+  }
+
+  for (const key in freq1) {
+    if (freq1[key] !== freq2[key]) return false;
+  }
   return true;
 }

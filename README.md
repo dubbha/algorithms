@@ -11,3 +11,4 @@
 #### Multiple Pointers
 - [count unique values](psp-multiple-pointers-count-unique-values.js)
 - [are there duplicates](psp-multiple-pointers-are-there-duplicates.js)
+- [average pair](psp-multiple-pointers-average-pair.js)
