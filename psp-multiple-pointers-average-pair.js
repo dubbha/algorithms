@@ -9,19 +9,15 @@
 function averagePair(ints, avg) {   // array of integers, target avarage
   if (!ints.length) return false;   // empty array edge case
 
-  let p1 = 0;                       // firrt index
+  let p1 = 0;                       // first index
   let p2 = ints.length - 1;         // last index
   
   while (p1 < p2) {
-    const curAvg = (ints[p2] - ints[p1]) / 2;
-    console.log(curAvg);
+    const curAvg = (ints[p1] + ints[p2]) / 2;
+    console.log(ints[p1], ints[p2], curAvg);
     if (curAvg === avg) return true;
-    if (curAvg > avg) {
-      p2--;
-    } else {
-      p1++;
-    }
 
+    curAvg > avg ? p2-- : p1++;
   }
   return false;
 }
