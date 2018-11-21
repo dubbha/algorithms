@@ -12,3 +12,5 @@
 - [count unique values](psp-multiple-pointers-count-unique-values.js)
 - [are there duplicates](psp-multiple-pointers-are-there-duplicates.js)
 - [average pair](psp-multiple-pointers-average-pair.js)
+- [is subsequence](psp-multiple-pointers-is-subsequence.js)
+- [is substring](psp-multiple-pointers-is-substring.js)
