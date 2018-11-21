@@ -14,10 +14,14 @@ function averagePair(ints, avg) {   // array of integers, target avarage
   
   while (p1 < p2) {
     const curAvg = (ints[p1] + ints[p2]) / 2;
-    console.log(ints[p1], ints[p2], curAvg);
     if (curAvg === avg) return true;
 
     curAvg > avg ? p2-- : p1++;
   }
   return false;
 }
+
+/*
+  https://www.udemy.com/js-algorithms-and-data-structures-masterclass/learn/v4/t/quiz/4410602
+  https://www.udemy.com/js-algorithms-and-data-structures-masterclass/learn/v4/t/lecture/11351742
+*/

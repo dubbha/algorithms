@@ -55,5 +55,6 @@ const areThereDuplicates = (...args) =>  new Set(args).size !== args.length;
 
 
 /*
-  https://www.udemy.com/js-algorithms-and-data-structures-masterclass/learn/v4/t/lecture/11351738?start=0
+  https://www.udemy.com/js-algorithms-and-data-structures-masterclass/learn/v4/t/quiz/4410592
+  https://www.udemy.com/js-algorithms-and-data-structures-masterclass/learn/v4/t/lecture/11351738
 */

@@ -30,4 +30,5 @@ function isSubsequence(substr, str) {
 
 /*
   https://www.udemy.com/js-algorithms-and-data-structures-masterclass/learn/v4/t/quiz/4410596
+  https://www.udemy.com/js-algorithms-and-data-structures-masterclass/learn/v4/t/lecture/11351742
 */

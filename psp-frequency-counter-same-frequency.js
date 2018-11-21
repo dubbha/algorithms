@@ -1,13 +1,13 @@
 /*
-    Write a function called sameFrequency.
-    Given two positive integers, find out if the two numbers have the same frequency of digits.
+  Write a function called sameFrequency.
+  Given two positive integers, find out if the two numbers have the same frequency of digits.
 
-    Your solution MUST have the following time complexity: O(n)
+  Your solution MUST have the following time complexity: O(n)
 
-    sameFrequency(182, 281);            // true
-    sameFrequency(34, 14);              // false
-    sameFrequency(3589578, 5879385);    // true
-    sameFrequency(22, 222);             // true
+  sameFrequency(182, 281);            // true
+  sameFrequency(34, 14);              // false
+  sameFrequency(3589578, 5879385);    // true
+  sameFrequency(22, 222);             // true
 */
 
 function sameFrequency(num1, num2) {
@@ -56,3 +56,9 @@ function sameFrequency(num1, num2) {
   }
   return true;
 }
+
+/*
+  https://www.udemy.com/js-algorithms-and-data-structures-masterclass/learn/v4/t/quiz/4410598
+  https://www.udemy.com/js-algorithms-and-data-structures-masterclass/learn/v4/t/lecture/11351738
+*/
+

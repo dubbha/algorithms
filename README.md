@@ -14,3 +14,14 @@
 - [average pair](psp-multiple-pointers-average-pair.js)
 - [is subsequence](psp-multiple-pointers-is-subsequence.js)
 - [is substring](psp-multiple-pointers-is-substring.js)
+
+#### Sliding window
+- [max subarray sum](psp-sliding-window-max-subarray-sum.js)
+- [max subarray len](psp-sliding-window-max-subarray-len.js)
+- [find longest substring](psp-sliding-window-find-longest-substring.js)
+
+### Recursion
+
+### Searching
+
+### Sorting
